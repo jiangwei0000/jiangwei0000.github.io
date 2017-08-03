@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jiang Wei&#39;s blog</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://jiangwei0000.github.io/"/>
+  <updated>2017-08-03T08:06:06.095Z</updated>
+  <id>https://jiangwei0000.github.io/</id>
+  
+  <author>
+    <name>Jiang Wei</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo博客的搭建</title>
+    <link href="https://jiangwei0000.github.io/2017/08/03/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
+    <id>https://jiangwei0000.github.io/2017/08/03/hexo博客的搭建/</id>
+    <published>2017-08-03T06:49:26.000Z</published>
+    <updated>2017-08-03T08:06:06.095Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h6><h6 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h6><p><a href="https://git-scm.com/" target="_blank" rel="external">下载</a> 并且安装git客户端</p>
+<h6 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h6><p>前往node.js<a href="https://nodejs.org" target="_blank" rel="external">官网</a> 下载最新稳定版Node.js</p>
+<h6 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h6><p><code>npm install -g hexo</code></p>
+<blockquote>
+<p>如果安装过慢可以安装淘宝npm镜像<br><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code><br>执行成功后使用cnpm代替npm</p>
+</blockquote>
+<h5 id="创建hexo项目"><a href="#创建hexo项目" class="headerlink" title="创建hexo项目"></a>创建hexo项目</h5><p>安装完成后，可以在任意目录下 使用 hexo init命令 初始化项目<br><code>hexo init</code></p>
+<h5 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h5><p>项目初始化完成后 使用npm install来安装项目依赖</p>
+<p><code>npm install</code></p>
+<h5 id="完成搭建"><a href="#完成搭建" class="headerlink" title="完成搭建"></a>完成搭建</h5><p>依赖安装完成后 整个博客就已经搭建完成了 可以执行下面的命令进行本地查看</p>
+<p><code>hexo generate</code><br><code>hexo server</code></p>
+<p>可以使用<a href="http://localhost:4000访问博客" target="_blank" rel="external">http://localhost:4000访问博客</a></p>
+<h5 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h5><p><strong><em>1.创建一个仓库</em></strong></p>
+<p>仓库名字为: 你的github帐号.github.io</p>
+<p><strong><em>2.生成SSH密钥</em></strong></p>
+<p>ssh-keygen -t rsa -C “你的邮箱地址”，按3个回车，密码为空。</p>
+<p>生成后地址在C:\Users\你的用户名 得到两个文件id_rsa和id_rsa.pub</p>
+<p><strong><em>3.在github上添加私钥</em></strong></p>
+<p><a href="https://github.com/settings/keys" target="_blank" rel="external">前往</a> github 点击 New SSH key </p>
+<p>这里title 随意台那些</p>
+<p>在key字段中填写id_rsa.pub中的内容</p>
+<p><strong><em>4.hexo配置</em></strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div></pre></td><td class="code"><pre><div class="line"># Hexo Configuration</div><div class="line">## Docs: http://hexo.io/docs/configuration.html</div><div class="line">## Source: https://github.com/hexojs/hexo/</div><div class="line"># Site #站点信息</div><div class="line">title:  #标题</div><div class="line">subtitle:  #副标题</div><div class="line">description:  #站点描述，给搜索引擎看的</div><div class="line">author:  #作者</div><div class="line">email:  #电子邮箱</div><div class="line">language: zh-CN #语言</div><div class="line"># URL #链接格式</div><div class="line">url:  #网址</div><div class="line">root: / #根目录</div><div class="line">permalink: :year/:month/:day/:title/ #文章的链接格式</div><div class="line">tag_dir: tags #标签目录</div><div class="line">archive_dir: archives #存档目录</div><div class="line">category_dir: categories #分类目录</div><div class="line">code_dir: downloads/code</div><div class="line">permalink_defaults:</div><div class="line"># Directory #目录</div><div class="line">source_dir: source #源文件目录</div><div class="line">public_dir: public #生成的网页文件目录</div><div class="line"># Writing #写作</div><div class="line">new_post_name: :title.md #新文章标题</div><div class="line">default_layout: post #默认的模板，包括 post、page、photo、draft（文章、页面、照片、草稿）</div><div class="line">titlecase: false #标题转换成大写</div><div class="line">external_link: true #在新选项卡中打开连接</div><div class="line">filename_case: 0</div><div class="line">render_drafts: false</div><div class="line">post_asset_folder: false</div><div class="line">relative_link: false</div><div class="line">highlight: #语法高亮</div><div class="line">  enable: true #是否启用</div><div class="line">  line_number: true #显示行号</div><div class="line">  tab_replace:</div><div class="line"># Category &amp; Tag #分类和标签</div><div class="line">default_category: uncategorized #默认分类</div><div class="line">category_map:</div><div class="line">tag_map:</div><div class="line"># Archives</div><div class="line">2: 开启分页</div><div class="line">1: 禁用分页</div><div class="line">0: 全部禁用</div><div class="line">archive: 2</div><div class="line">category: 2</div><div class="line">tag: 2</div><div class="line"># Server #本地服务器</div><div class="line">port: 4000 #端口号</div><div class="line">server_ip: localhost #IP 地址</div><div class="line">logger: false</div><div class="line">logger_format: dev</div><div class="line"># Date / Time format #日期时间格式</div><div class="line">date_format: YYYY-MM-DD #参考http://momentjs.com/docs/#/displaying/format/</div><div class="line">time_format: H:mm:ss</div><div class="line"># Pagination #分页</div><div class="line">per_page: 10 #每页文章数，设置成 0 禁用分页</div><div class="line">pagination_dir: page</div><div class="line"># Disqus #Disqus评论，替换为多说</div><div class="line">disqus_shortname:</div><div class="line"># Extensions #拓展插件</div><div class="line">theme: landscape-plus #主题</div><div class="line">exclude_generator:</div><div class="line">plugins: #插件，例如生成 RSS 和站点地图的</div><div class="line">- hexo-generator-feed</div><div class="line">- hexo-generator-sitemap</div><div class="line"># Deployment #部署，将 lmintlcx 改成用户名</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: 刚刚github创库地址.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>按照上面的说明设置完成后执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
+<p>即可访问你的博客</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h6 id=&quot;环境准备&quot;&gt;&lt;a href=&quot;#环境准备&quot; class=&quot;headerlink&quot; title=&quot;环境准备&quot;&gt;&lt;/a&gt;环境准备&lt;/h6&gt;&lt;h6 id=&quot;安装git&quot;&gt;&lt;a href=&quot;#安装git&quot; class=&quot;headerlink&quot; title=&quot;安装git&quot;&gt;
+    
+    </summary>
+    
+      <category term="乱七八糟" scheme="https://jiangwei0000.github.io/categories/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/"/>
+    
+    
+      <category term="hexo" scheme="https://jiangwei0000.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>
