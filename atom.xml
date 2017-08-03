@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://jiangwei0000.github.io/"/>
+  <link href="http://www.jiangw.site/"/>
   <updated>2017-08-03T08:06:06.095Z</updated>
-  <id>https://jiangwei0000.github.io/</id>
+  <id>http://www.jiangw.site/</id>
   
   <author>
     <name>Jiang Wei</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>hexo博客的搭建</title>
-    <link href="https://jiangwei0000.github.io/2017/08/03/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
-    <id>https://jiangwei0000.github.io/2017/08/03/hexo博客的搭建/</id>
+    <link href="http://www.jiangw.site/2017/08/03/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
+    <id>http://www.jiangw.site/2017/08/03/hexo博客的搭建/</id>
     <published>2017-08-03T06:49:26.000Z</published>
     <updated>2017-08-03T08:06:06.095Z</updated>
     
@@ -54,10 +54,10 @@
     
     </summary>
     
-      <category term="乱七八糟" scheme="https://jiangwei0000.github.io/categories/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/"/>
+      <category term="乱七八糟" scheme="http://www.jiangw.site/categories/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/"/>
     
     
-      <category term="hexo" scheme="https://jiangwei0000.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="http://www.jiangw.site/tags/hexo/"/>
     
   </entry>
   
